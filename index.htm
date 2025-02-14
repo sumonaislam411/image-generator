@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt to Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Telegram Web App SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- OnClickAds Scripts -->
+    <script async src="https://js.onclckmn.com/static/onclicka.js" data-admpid="293549"></script>
+    <script async src="https://js.onclckmn.com/static/onclicka.js" data-admpid="293545"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Prompt to Image Converter</h1>
+        
+        <!-- Prompt Input -->
+        <textarea id="prompt-input" placeholder="Enter your prompt here..."></textarea>
+        
+        <!-- Aspect Ratio Input -->
+        <input type="text" id="aspect-ratio" placeholder="Enter Aspect Ratio (e.g., 16:9)">
+        
+        <!-- Image Upload -->
+        <input type="file" id="image-upload" accept="image/*">
+        
+        <!-- Generate Button -->
+        <button id="generate-btn">Generate Image</button>
+        
+        <!-- Regenerate Button -->
+        <button id="regenerate-btn" style="display: none;">Regenerate Image</button>
+        
+        <!-- Image Container -->
+        <div id="image-container"></div>
+        
+        <!-- Download Button -->
+        <button id="download-btn" style="display: none;">Download Image</button>
+        
+        <!-- Banner Ad -->
+        <div id="banner-ad">
+            <div id="onclicka-banner-ad"></div>
+        </div>
+    </div>
+
+    <!-- Video Ad Modal -->
+    <div id="video-ad-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="onclicka-video-ad"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
